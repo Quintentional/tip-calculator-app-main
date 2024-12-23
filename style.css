@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#layout {
+    width: 90rem;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 8rem;
+    font-size: 26px;
+    letter-spacing: 10px;
+    color: hsl(177, 95%, 22%);
+    text-transform: uppercase;
+    margin-block: 8rem 5rem;
+}
+
+#app {
+    width: 57.5rem;
+    height: 30rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3rem 2rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+}
+
+.label-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    color: hsl(32, 100%, 50%);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 4px;
+    display: none;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(186, 19%, 52%);
+    margin-bottom: .5rem;
+}
+
+#bill-div, #people-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    text-align: right;
+    padding-right: 1rem;
+    font-family: "Space Mono", serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: hsl(184, 14%, 56%);
+    border: 3px solid transparent;
+    outline: none;
+}
+
+input:hover {
+    cursor: pointer;
+    border: 3px solid hsl(173, 61%, 77%);
+}
+
+input:focus {
+    cursor: pointer;
+    border: 3px solid hsl(173, 61%, 77%);
+}
+
+
+#bill {
+    width: 23rem;
+    height: 3rem;
+    border-radius: 7px;
+    background-color: hsl(189, 41%, 97%);
+    margin-bottom: 2rem;
+}
+
+::placeholder {
+    color: hsl(184, 14%, 56%);
+}
+
+#tip-grid {
+    display: grid;
+    gap: 1rem .5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2.5rem;
+}
+
+.tip-button {
+    width: 7.25rem;
+    height: 3rem;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    border: none;
+    font-family: "Space Mono", serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tip-button:hover {
+    cursor: pointer;
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%)
+}
+
+
+#custom {
+    width: 7.25rem;
+    height: 3rem;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(177, 95%, 22%);
+    border-radius: 5px;
+    padding-right: .5rem;
+}
+
+
+
+
+#people{
+    width: 23rem;
+    height: 3rem;
+    border-radius: 7px;
+    background-color: hsl(189, 41%, 97%);
+}
+
+.icon {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1rem;
+}
+
+#dollar-sign {
+    bottom: 3rem;
+}
+
+#output {
+    width: 50%;
+    height: 85%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#amount-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#amount-div, #total-div {
+    width: 80%;;
+    display: flex;
+    justify-content: space-between;
+}
+
+#amount-div {
+    margin-block: 4rem;
+}
+
+h2 {
+    font-size: 14px;
+    color: hsl(189, 41%, 97%);
+}
+
+.per {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(177, 68%, 36%);
+}
+
+#amount-output, #total-output {
+    font-size: 44px;
+    font-weight: 600;
+    color: hsl(172, 67%, 45%);
+    margin-top: -1rem;
+}
+
+#reset {
+    width: 85%;
+    height: 3rem;
+    background-color: hsl(183, 80%, 24%);
+    color: hsla(183, 100%, 15%, 0.37);
+    font-size: 22px;
+    font-weight: 800;
+    font-family: "Space Mono", serif;
+    text-transform: uppercase;
+    border-radius: 7px;
+    border: none;
+    align-self: center;
+    margin-bottom: 2.5rem;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%)
+}
