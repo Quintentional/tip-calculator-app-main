@@ -61,8 +61,9 @@ form {
     font-size: 16px;
     font-weight: 600;
     margin-right: 4px;
-    display: none;
+    display: inlin\;
 }
+
 
 label {
     font-size: 16px;
@@ -96,6 +97,12 @@ input:hover {
 input:focus {
     cursor: pointer;
     border: 3px solid hsl(173, 61%, 77%);
+}
+
+input.error {
+    border: 3px solid hsl(32, 100%, 50%);
+    font-size: 26px;
+    font-weight: 600;
 }
 
 
@@ -133,7 +140,12 @@ input:focus {
 .tip-button:hover {
     cursor: pointer;
     background-color: hsl(173, 61%, 77%);
-    color: hsl(183, 100%, 15%)
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-button.active {
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%);
 }
 
 
@@ -228,6 +240,11 @@ h2 {
 
 #reset:hover {
     cursor: pointer;
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%)
+}
+
+#reset.active {
     background-color: hsl(173, 61%, 77%);
     color: hsl(183, 100%, 15%)
 }
